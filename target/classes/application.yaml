@@ -1,0 +1,19 @@
+# properties文件写法
+# spring.resources.static-locations=classpath:/resources/, classpath:/static/, classpath:/public/
+# spring.mvc.static-path-patterns=/*.js, /*.txt
+# yaml文件写法
+# spring.resources.static-locations: [classpath:/resources/, classpath:/static/, classpath:/public/]
+# spring.mvc.static-path-pattern: [/*.txt, /*.js]
+spring:
+  http:
+    encoding:
+      force: true
+  ####################################
+  #  自定义 SpringMVC dateFormat 配置
+  mvc:
+    date-format: yyyy-MM-dd
+
+#  tomcat:
+#    uri-encoding: UTF-8
+
+

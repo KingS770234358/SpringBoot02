@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thymeleafTest</title>
+</head>
+<body>
+<p>所有的html元素都可以被thymeleaf替换接管, th:元素名 即可</p>
+<p>1.取Model中的变量:<span th:text="${msg}"/></p>
+<hr>
+<p>2.取Model中的转义信息:<span th:utext="${utext}"/></p>
+<hr>
+<p>3.1.遍历数据(建议写法):<span th:each="num:${list}" th:text="${num}"/></p>
+<p>3.2.遍历数据:<span th:each="num:${list}">[[${num}]]</span></p>
+</body>
+</html>
